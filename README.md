@@ -23,48 +23,6 @@ This project proposes an AI-based Smart Sampling system designed to replace outd
 - `docs/`: Project report and tiered system explanation
 
 ## 🖼️ Preview
-1. PRODUCT FLOW (e.g. wafer/PCB)
-        ↓
-2. IMAGE CAPTURE MODULE
-    [Camera Module: RPi Cam / USB Webcam]
-        ↓
-3. EDGE AI UNIT
-    [Jetson Nano / Raspberry Pi 4]
-    └─ YOLOv8n detects defect (class, location, confidence)
-        ↓
-4. SMART SAMPLING ENGINE
-    ├─ Decision Logic: Accept / Resample / Reject
-    ├─ Factors:
-    │   ├─ Defect type & severity
-    │   ├─ Confidence level
-    │   ├─ Batch history
-    │   └─ Stage/machine risk
-    └─ Output: Decision per unit
-        ↓
-5. FEEDBACK LEARNING LOOP
-    [LightGBM model]
-    ├─ Inputs:
-    │   ├─ Historical defect trends
-    │   ├─ Sensor logs (temperature, machine ID, shift)
-    │   └─ Past sampling results
-    └─ Adjust sampling % for future batches
-        ↓
-6. COST-AWARE OPTIMIZER
-    ├─ Calculates:
-    │   ├─ (Defect Risk × Failure Cost)
-    │   └─ Compare with Inspection Cost
-    └─ Adjusts sampling rate accordingly
-        ↓
-7. TRACEABILITY MODULE
-    └─ Maps defect to stage/machine via:
-        ├─ Timestamp
-        ├─ Sensor log
-        └─ Batch metadata
-        ↓
-8. DASHBOARD / REPORT OUTPUT
-    ├─ Real-time decision logs
-    ├─ Defect distribution heatmap
-    └─ Adaptive sampling trends
-
+![ Image 15_42_41 26 thg 5, 2025](https://github.com/user-attachments/assets/2841b5f2-4f44-4966-b26a-d5dd1e2196df)
 
 
